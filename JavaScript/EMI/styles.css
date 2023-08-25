@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .calculator {
+   
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 1000px;
+    background-color: wheat;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  label, input {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #0044cc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #003399;
+  }
+  #result{
+    margin-top: 25px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    border: 1px dashed black;
+  }
+  .resBox{
+    display: none;
+  }
+  .resultText{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 300px;
+    border: 1px solid black;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+  }
+  .emi,.totalIntrest,.totalPayable{
+    border-bottom: 0.5px solid black;
+    border-left:0.5px solid black ;
+  }
