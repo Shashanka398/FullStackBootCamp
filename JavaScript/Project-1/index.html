@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body class="body">
+  <div class="container">
+    <div class="heading">
+      <h1 id="costom-heading box">Contact list</h1>
+    </div>
+    <div class="search-bar">
+      <input type="text" class="form-control search" placeholder="Search">
+      <button class="btn btn-add btn-success my-2 my-sm-0" type="submit">Add Contact</button>
+    </div>
+    <div class="container mt-5 display-info table-div">
+   
+      <table class="table table-striped table-dark box">
+        <thead>
+          <tr>
+            
+            <th>Name</th>
+            <th>Mobile</th>
+            <th>Email</th>
+            <th class="resize"></th>
+            <th class="resize"></th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <!-- Table rows will be dynamically added here -->
+        </tbody>
+        <div class="pagination">
+          <button class="btn  btn-secondary" id="prevPage"> < Previous</button>
+          <button class="btn  btn-secondary" id="nextPage">Next ></button>
+        </div>
+      </table>
+    </div>
+    
+  </div>
+
+  <div class="addContact pop-1 popup-form" id="popupForm">
+    <form class="forms">
+      <h3>Add contact</h3>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name"
+          required>
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile Number</label>
+        <input type="tel" class="form-control" id="mobile" placeholder="Mobile Number" pattern="[0-9]{10}"
+          title="Mobile number must have exactly 10 digits" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Email " required>
+      </div>
+      <div class="btns">
+        <button type="submit" class="btn submit-btn btn-primary">Submit</button>
+        <button type="submit" class="btn back-btn btn-primary">Back</button>
+      </div>
+    </form>
+    </div>
+ 
+
+  <div class="updateContact popup-form" id="popupForm" >
+    <form class="forms">
+      <h3>Update contact</h3>
+      <div class="form-group">
+        <label for="name">Id</label>
+        <input type="text" class="form-control" id="updateId" aria-describedby="nameHelp" placeholder="Enter id"
+          readonly>
+      </div>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="updateName" aria-describedby="nameHelp" placeholder="Enter name">
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile Number</label>
+        <input type="tel" class="form-control" id="updateMobile" placeholder="Mobile Number" pattern="[0-9]{10}"
+          title="Mobile number must have exactly 10 digits" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="updateEmail" placeholder="Email ">
+      </div>
+      <div class="btns">
+        <button type="submit" class="btn update-btn btn-primary">Submit</button>
+        <button type="submit" class="btn back-btn btn-primary">Back</button>
+        <p class="updated"></p>
+      </div>
+      
+    </form>
+  </div>
+  <div class="overlay"></div>
+  <div class="alert" id="alert-1">
+    <p id="alert-text" style="color: aliceblue; font-size: large;"></p>
+    <button class="btn  btn-secondary" id="alert-yes"> Yes</button>
+    <button class="btn  btn-danger" id="alert-no">No</button>
+ </div>
+
+  </div>
+  
+
+
+  <script src="./main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
